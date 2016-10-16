@@ -1,3 +1,8 @@
 <h2><%= @client.name %></h2>
 <h2><%= link_to @client.chart_type %></h2>
 <%= link_to 'Back', clients_path %>
+
+
+
+<%= link_to 'Edit this client', edit_client_path(@client) %>
+<%= link_to 'Delete this client', client_path(@client), method: :delete %>

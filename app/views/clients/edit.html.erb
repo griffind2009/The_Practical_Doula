@@ -1,13 +1,13 @@
-<h1> Create a New Client </h1>
-
+<h1> Edit Client </h1>
 <%= form_for @client do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :chart_type %>
   <%= f.text_field :chart_type%>
 
-  <%= f.submit "Create"%>
+  <%= f.submit "Edit"%>
 <% end %>
 
 <br>
-<%= link_to 'Back', clients_path %>
+
+<%= link_to 'Back', client_path %>

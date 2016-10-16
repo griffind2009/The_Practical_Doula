@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/ce/ce/02/cece02f58958ac638c2e5de11d12e991.jpg);
+    /*background-size: 100%;*/
+    /*background: url(http://www.wncdoulas.com/wp-content/uploads/2012/06/babyfeet-e1338853230323.jpg);*/
+    background-width: 100%;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+/*h1, h2 {
+  color: white;
+}*/
