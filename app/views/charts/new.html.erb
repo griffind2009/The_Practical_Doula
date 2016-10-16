@@ -1,0 +1,50 @@
+<h1> Create a New 'Basic' Client Form </h1>
+
+<%= form_for @chart do |f| %>
+<%= f.label :chart_type %>
+<%= f.text_field :chart_type %>
+<%= f.label :client_id %>
+<%= f.text_field :client_id %>
+
+  <%= f.submit "Create"%>
+<% end %>
+
+<br>
+
+<h1> Create a New 'Prenatal' Client Form </h1>
+
+<%= form_for @chart do |f| %>
+<%= f.label :chart_type %>
+<%= f.text_field :chart_type %>
+<%= f.label :client_id %>
+<%= f.text_field :client_id %>
+
+  <%= f.submit "Create"%>
+<% end %>
+
+<br>
+<h1> Create a New 'Newborn' Client Form </h1>
+
+<%= form_for @chart do |f| %>
+<%= f.label :chart_type %>
+<%= f.text_field :chart_type %>
+<%= f.label :client_id %>
+<%= f.text_field :client_id %>
+
+  <%= f.submit "Create"%>
+<% end %>
+
+<br>
+<h1> Create a New 'Postpartum' Client Form </h1>
+
+<%= form_for @chart do |f| %>
+<%= f.label :chart_type %>
+<%= f.text_field :chart_type %>
+<%= f.label :client_id %>
+<%= f.text_field :client_id %>
+
+  <%= f.submit "Create"%>
+<% end %>
+
+<br>
+<%= link_to 'Back', charts_path %>
