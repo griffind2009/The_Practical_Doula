@@ -5,9 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Client.destroy_all
+Chart.destroy_all
 
 Client.create([
-  {name: "Amy"}, {name: "Mary"}, {name: "Lana"}
+  {name: "Amy", chart_type: "basic"}, {name: "Mary", chart_type: "background"}, {name: "Lana", chart_type: "postpartum"}
   ])
 
 Chart.create([
