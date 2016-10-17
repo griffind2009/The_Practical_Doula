@@ -1,0 +1,11 @@
+<h1> Create a New Prenatal Form </h1>
+
+<%= form_for @prenatal do |f| %>
+  <%= f.label :EDD %>
+  <%= f.text_field :EDD %>
+  <%= f.label :BP %>
+  <%= f.text_field :BP %>
+  <%= f.label :physician %>
+  <%= f.text_field :physician %>
+  <%= f.submit "Create"%>
+<% end %>
