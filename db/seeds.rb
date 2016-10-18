@@ -6,17 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Client.destroy_all
-Chart.destroy_all
+
 
 Client.create([
-  {name: "Amy", chart_type: "basic"}, {name: "Mary", chart_type: "background"}, {name: "Lana", chart_type: "postpartum"}
+  {name: "Amy", chart_type: "basic"}, {name: "Mary", chart_type: "prenatal"}, {name: "Lana", chart_type: "postpartum"}
   ])
-
-Chart.create([
-  {chart_type: "basic"}, {chart_type: "background"}, {chart_type: "current"}, {chart_type: "prenatal"},
-  {chart_type: "birth"}, {chart_type: "newborn"}, {chart_type: "postpartum"}
-  ])
-
-chart.prenatal.create(EDD: 12/31/2016, physician: "Dr. Jekyll", nutrition: "healthy")
-chart.postpartum.create(questions: "when will i sleep", )
-chart.birth.create(medications: "yes", intervention: "yes")

@@ -8,6 +8,7 @@ class BirthsController < ApplicationController
   end
 
   def new
+    @client = Client.find(params[:client_id])
     @birth = Birth.new
   end
 

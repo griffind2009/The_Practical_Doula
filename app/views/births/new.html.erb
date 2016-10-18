@@ -1,6 +1,6 @@
 <h1> Create a New Birth Form </h1>
 
-<%= form_for @birth do |f| %>
+<%= form_for [@client, @birth] do |f| %>
   <%= f.label :medication %>
   <%= f.text_field :medication %>
   <%= f.label :intervention %>

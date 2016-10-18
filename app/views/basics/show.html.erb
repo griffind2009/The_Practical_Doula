@@ -1,0 +1,8 @@
+<h3><%= @basic %></h3>
+<h3><%= link_to @client.basic %></h3>
+<%= link_to 'Back', client_basic_path(@basic) %>
+
+
+
+<%= link_to 'Edit Chart', edit_basic_path(@basic) %>
+<%= link_to 'Delete Chart', basic_path(@basic), method: :delete %>

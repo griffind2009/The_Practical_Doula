@@ -4,7 +4,7 @@ class BasicsController < ApplicationController
   end
 
   def show
-    @basic = Basic.find(params[:id])
+    @basic = Basic.find(params[:client_id])
   end
 
   def new
@@ -12,8 +12,9 @@ class BasicsController < ApplicationController
   end
 
   def create
-    @basic = Basic.create(basic_params)
-    redirect_to @basic
+    @client = Client.find(params[:client_id])
+    @basic = @client.basics.create(basic_params)
+    redirect_to client_path(@client)
   end
 
 
