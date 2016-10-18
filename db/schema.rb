@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161018123806) do
+ActiveRecord::Schema.define(version: 20161018201235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20161018123806) do
     t.text    "name"
     t.text    "address"
     t.integer "age"
-    t.integer "clients_id"
-    t.index ["clients_id"], name: "index_basics_on_clients_id", using: :btree
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_basics_on_client_id", using: :btree
   end
 
   create_table "births", force: :cascade do |t|
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20161018123806) do
     t.text    "intervention"
     t.integer "dilation"
     t.integer "effacement"
-    t.integer "clients_id"
-    t.index ["clients_id"], name: "index_births_on_clients_id", using: :btree
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_births_on_client_id", using: :btree
   end
 
   create_table "clients", force: :cascade do |t|
@@ -41,16 +41,16 @@ ActiveRecord::Schema.define(version: 20161018123806) do
     t.text    "support"
     t.text    "recovery"
     t.text    "questions"
-    t.integer "clients_id"
-    t.index ["clients_id"], name: "index_postpartums_on_clients_id", using: :btree
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_postpartums_on_client_id", using: :btree
   end
 
   create_table "prenatals", force: :cascade do |t|
     t.integer "EDD"
     t.integer "BP"
     t.text    "physician"
-    t.integer "clients_id"
-    t.index ["clients_id"], name: "index_prenatals_on_clients_id", using: :btree
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_prenatals_on_client_id", using: :btree
   end
 
 end

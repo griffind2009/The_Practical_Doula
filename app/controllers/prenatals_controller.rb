@@ -8,12 +8,14 @@ class PrenatalsController < ApplicationController
   end
 
   def new
+    @client = Client.find(params[:client_id])
     @prenatal = Prenatal.new
   end
 
   def create
-    @prenatal = Prenatal.create(prenatal_params)
-    redirect_to @prenatal
+    @client = Client.find(params[:client_id])
+    @prenatal = @client.prenatals.create(prenatal_params)
+    redirect_to prenatal_path(@prenatal)
   end
 
 

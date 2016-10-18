@@ -1,6 +1,6 @@
-<h1> Create a New 'Basic' Client Form </h1>
+<h1> Create a New Basic Chart </h1>
 
-<%= form_for @basic do |f| %>
+<%= form_for [@client, @basic] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :address %>

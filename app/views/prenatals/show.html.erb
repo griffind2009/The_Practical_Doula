@@ -1,0 +1,9 @@
+<h3><%= @prenatal.EDD %></h3>
+<h3><%= @prenatal.BP %></h3>
+<h3><%= @prenatal.physician %></h3>
+
+
+
+
+<%= link_to 'Edit Chart', edit_prenatal_path(@prenatal) %>
+<%= link_to 'Delete Chart', prenatal_path(@prenatal), method: :delete %>

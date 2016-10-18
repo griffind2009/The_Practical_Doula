@@ -1,6 +1,6 @@
-<h1> Create a New Prenatal Form </h1>
+<h1> Create a New Prenatal Chart </h1>
 
-<%= form_for @prenatal do |f| %>
+<%= form_for [@client, @prenatal] do |f| %>
   <%= f.label :EDD %>
   <%= f.text_field :EDD %>
   <%= f.label :BP %>

@@ -1,6 +1,6 @@
 <h1> Create a New Postpartum Chart </h1>
 
-<%= form_for @postpartum do |f| %>
+<%= form_for [@client, @postpartum] do |f| %>
   <%= f.label :support %>
   <%= f.text_field :support %>
   <%= f.label :recovery %>

@@ -1,0 +1,9 @@
+<h3><%= @birth.medication %></h3>
+<h3><%= @birth.intervention %></h3>
+<h3><%= @birth.dilation %></h3>
+<h3><%= @birth.effacement %></h3>
+
+
+
+<%= link_to 'Edit Chart', edit_birth_path(@birth) %>
+<%= link_to 'Delete Chart', birth_path(@birth), method: :delete %>

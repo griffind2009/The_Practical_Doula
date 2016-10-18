@@ -1,4 +1,4 @@
-class PostpartumsController < ApplicationController
+class PostpartaController < ApplicationController
   def index
     @postpartums = Postpartum.all
   end
@@ -8,12 +8,14 @@ class PostpartumsController < ApplicationController
   end
 
   def new
+    @client = Client.find(params[:client_id])
     @postpartum = Postpartum.new
   end
 
   def create
-    @postpartum = Postpartum.create(postpartum_params)
-    redirect_to @postpartum
+    @client = Client.find(params[:client_id])
+    @postpartum = @client.postpartums.create(postpartum_params)
+    redirect_to client_path(@client)
   end
 
 
