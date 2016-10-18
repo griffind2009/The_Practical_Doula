@@ -12,8 +12,9 @@ class BirthsController < ApplicationController
   end
 
   def create
-    @birth = Birth.create(birth_params)
-    redirect_to @birth
+    @client = Client.find(params[:client_id])
+    @birth = @client.births.create(birth_params)
+    redirect_to client_path(@client)
   end
 
 
