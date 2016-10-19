@@ -1,9 +1,13 @@
-<h3><%= @postpartum.support %></h3>
-<h3><%= @postpartum.recovery %></h3>
-<h3><%= @postpartum.questions %></h3>
+<h4><%= @postpartum.support %></h4>
+<h4><%= @postpartum.recovery %></h4>
+<h4><%= @postpartum.questions %></h4>
 
 
 
 
 <%= link_to 'Edit Chart', edit_postpartum_path(@postpartum) %>
+<br>
 <%= link_to 'Delete Chart', postpartum_path(@postpartum), method: :delete %>
+<br>
+
+<%= link_to 'Clients', clients_path %>
