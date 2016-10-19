@@ -30,23 +30,30 @@ background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_Pro
 h1 {
   color: #AA1111;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 ol{
   font-weight: bold;
   color: #AA1111;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .8px;
    -webkit-text-stroke-color: #AA1111;
+   font-family: 'Merriweather', serif;
+   margin: 3px;
 }
 a:link {
     color: #AA1111;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
+
 }
 a:visited {
     /*color: #141212;*/
     /*color: #00000F;*/
     /*color: #AA1111;*/
     color: #640B82;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 a:hover {
     color: #AA1111;
@@ -57,4 +64,12 @@ a:active {
 }
 h2, h3, h4 {
   color: #AA1111;
+  font-family: 'Oswald', sans-serif;
+}
+
+.client{
+  /*background-color: #F7F2F9;*/
+  background-color: rgba(255, 255, 255, .6);
+  display: flex;
+  margin-right: 80%;
 }
