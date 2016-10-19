@@ -3,4 +3,5 @@ class Client < ActiveRecord::Base
   has_many :births
   has_many :prenatals
   has_many :postparta
+  belongs_to :user
 end

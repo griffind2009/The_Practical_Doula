@@ -12,7 +12,7 @@ class ClientsController < ApplicationController
   end
 
   def create
-    @client = Client.create(client_params)
+    @client = Client.create!(client_params.merge(user: current_user))
     redirect_to @client
   end
 
