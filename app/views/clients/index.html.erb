@@ -1,13 +1,14 @@
 <h1>Welcome to The Practical Doula!</h1>
 <br>
 
-<ul>
+<ol>
 <% @clients.each do |client| %>
-  <li>
-  <%= link_to client.name, client_path(client) %>
+<li>
+<%= link_to client.name, client_path(client) %>
 </li>
-</ul>
+
 <% end %>
+</ol>
 
 <br>
 

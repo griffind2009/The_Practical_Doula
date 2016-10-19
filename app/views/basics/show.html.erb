@@ -1,9 +1,13 @@
-<h3><%= @basic.name %></h3>
-<h3><%= @basic.address %></h3>
-<h3><%= @basic.age %></h3>
+<h4><%= @basic.name %></h4>
+<h4><%= @basic.address %></h4>
+<h4><%= @basic.age %></h4>
+
 
 
 
 
 <%= link_to 'Edit Chart', edit_basic_path(@basic) %>
+<br>
 <%= link_to 'Delete Chart', basic_path(@basic), method: :delete %>
+<br>
+<%= link_to 'Clients', clients_path %>

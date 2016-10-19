@@ -18,6 +18,21 @@ class PostpartaController < ApplicationController
     redirect_to client_path(@client)
   end
 
+  def edit
+    @postpartum = Postpartum.find(params[:id])
+  end
+
+  def update
+    @postpartum = Postpartum.find(params[:id])
+    @postpartum.update(postpartum_params)
+    redirect_to clients_path
+  end
+
+  def destroy
+    @postpartum = Postpartum.find(params[:id])
+    @postpartum.destroy
+    redirect_to clients_path
+  end
 
   private
     def postpartum_params

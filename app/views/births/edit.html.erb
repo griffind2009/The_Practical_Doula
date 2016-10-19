@@ -1,0 +1,17 @@
+<h1> Edit Chart </h1>
+<%= form_for @birth do |f| %>
+<%= f.label :medication %>
+<%= f.text_field :medication %>
+<%= f.label :intervention %>
+<%= f.text_field :intervention %>
+<%= f.label :dilation %>
+<%= f.text_field :dilation %>
+<%= f.label :effacement %>
+<%= f.text_field :effacement %>
+
+  <%= f.submit "Edit"%>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', client_path %>

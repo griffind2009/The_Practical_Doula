@@ -18,6 +18,21 @@ class BirthsController < ApplicationController
     redirect_to birth_path(@birth)
   end
 
+  def edit
+    @birth = Birth.find(params[:id])
+  end
+
+  def update
+    @birth = Birth.find(params[:id])
+    @birth.update(birth_params)
+    redirect_to clients_path
+  end
+
+  def destroy
+    @birth = Birth.find(params[:id])
+    @birth.destroy
+    redirect_to clients_path
+  end
 
   private
     def birth_params

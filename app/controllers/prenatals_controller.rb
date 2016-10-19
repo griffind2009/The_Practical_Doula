@@ -18,6 +18,22 @@ class PrenatalsController < ApplicationController
     redirect_to prenatal_path(@prenatal)
   end
 
+  def edit
+    @prenatal = Prenatal.find(params[:id])
+  end
+
+  def update
+    @prenatal = Prenatal.find(params[:id])
+    @prenatal.update(prenatal_params)
+    redirect_to clients_path
+  end
+
+  def destroy
+    @prenatal = Prenatal.find(params[:id])
+    @prenatal.destroy
+    redirect_to clients_path
+  end
+
 
   private
     def prenatal_params

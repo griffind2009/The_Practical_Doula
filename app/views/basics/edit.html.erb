@@ -1,0 +1,15 @@
+<h1> Edit Chart </h1>
+<%= form_for @basic do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :address %>
+<%= f.text_field :address %>
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+  <%= f.submit "Edit"%>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', clients_path %>

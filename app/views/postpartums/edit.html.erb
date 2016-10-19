@@ -1,0 +1,15 @@
+<h1> Edit Chart </h1>
+<%= form_for @postpartum do |f| %>
+<%= f.label :support %>
+<%= f.text_field :support %>
+<%= f.label :recovery %>
+<%= f.text_field :recovery %>
+<%= f.label :questions %>
+<%= f.text_field :questions %>
+
+  <%= f.submit "Edit"%>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', client_path %>
