@@ -35,6 +35,8 @@ h1 {
 ol{
   font-weight: bold;
   color: #AA1111;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #AA1111;
 }
 a:link {
     color: #AA1111;

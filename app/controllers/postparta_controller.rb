@@ -14,8 +14,8 @@ class PostpartaController < ApplicationController
 
   def create
     @client = Client.find(params[:client_id])
-    @postpartum = @client.postpartums.create(postpartum_params)
-    redirect_to client_path(@client)
+    @postpartum = @client.postparta.create(postpartum_params)
+    redirect_to postpartum_path(@postpartum)
   end
 
   def edit
