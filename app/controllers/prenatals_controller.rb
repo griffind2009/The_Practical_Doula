@@ -25,7 +25,7 @@ class PrenatalsController < ApplicationController
   def update
     @prenatal = Prenatal.find(params[:id])
     @prenatal.update(prenatal_params)
-    redirect_to clients_path
+    redirect_to prenatal_path(@prenatal)
   end
 
   def destroy

@@ -25,7 +25,7 @@ class BasicsController < ApplicationController
     def update
       @basic = Basic.find(params[:id])
       @basic.update(basic_params)
-      redirect_to clients_path
+      redirect_to basic_path(@basic)
     end
 
     def destroy

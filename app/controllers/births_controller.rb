@@ -25,7 +25,7 @@ class BirthsController < ApplicationController
   def update
     @birth = Birth.find(params[:id])
     @birth.update(birth_params)
-    redirect_to clients_path
+    redirect_to birth_path(@birth)
   end
 
   def destroy
