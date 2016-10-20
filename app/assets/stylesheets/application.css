@@ -16,15 +16,8 @@
 
 
 body {
-  /*background: url(https://s-media-cache-ak0.pinimg.com/originals/ce/ce/02/cece02f58958ac638c2e5de11d12e991.jpg);*/
-/*background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_ProductPink.jpg);*/
+
 background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_ProductRed.jpg);
-    /*background-size: 100%;*/
-    /*background: url(http://www.wncdoulas.com/wp-content/uploads/2012/06/babyfeet-e1338853230323.jpg);*/
-    background-width: 100%;
-    /*-webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;*/
 }
 
 h1 {
@@ -41,6 +34,7 @@ ol{
    font-family: 'Merriweather', serif;
    margin: 3px;
 }
+
 a:link {
     color: #AA1111;
     font-family: 'Merriweather', serif;
@@ -48,9 +42,6 @@ a:link {
 
 }
 a:visited {
-    /*color: #141212;*/
-    /*color: #00000F;*/
-    /*color: #AA1111;*/
     color: #640B82;
     font-family: 'Merriweather', serif;
     font-weight: bold;
@@ -68,7 +59,6 @@ h2, h3, h4 {
 }
 
 .client{
-  /*background-color: #F7F2F9;*/
   background-color: rgba(255, 255, 255, .6);
   display: flex;
   margin-right: 80%;
