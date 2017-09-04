@@ -1,7 +1,11 @@
 body {
 
-background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_ProductRed.jpg);
-/*background: rgb(0, 117, 164);*/
+/*background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_ProductRed.jpg);*/
+/*background: url(../images/doula.jpg);*/
+/*background: url(https://awelbornbaby.com/wp-content/uploads/2017/05/DoulaLove_ProductRed.jpg);*/
+background: rgb(0, 117, 164);
+/*rgb(0, 134, 175)
+rgb(154, 36, 113)*/
 background-size: cover;
 background-position: top;
 background-size: 960px 880px;
@@ -46,7 +50,6 @@ h2, h3, h4 {
 }
 
 .client{
-  /*background-color: rgba(255, 255, 255, .6);*/
   display: flex;
   margin-right: 80%;
 }
