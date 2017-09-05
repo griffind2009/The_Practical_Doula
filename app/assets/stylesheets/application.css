@@ -1,9 +1,9 @@
 body {
 
 /*background: url(http://awelbornbaby.com/wp-content/uploads/2015/09/DoulaLove_ProductRed.jpg);*/
-/*background: url(../images/doula.jpg);*/
+background: url('/assets/doula.jpg');
 /*background: url(https://awelbornbaby.com/wp-content/uploads/2017/05/DoulaLove_ProductRed.jpg);*/
-background: rgb(0, 117, 164);
+/*background: rgb(0, 117, 164);*/
 /*rgb(0, 134, 175)
 rgb(154, 36, 113)*/
 background-size: cover;
